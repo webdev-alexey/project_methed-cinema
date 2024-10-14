@@ -22,12 +22,13 @@
 .header__search-form {
   flex-grow: 1;
   height: 70px;
-  padding-left: 73px;
+  padding-left: 60px;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: left 15px center;
   background-color: var(--color-second);
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .header__search-input {
@@ -36,6 +37,13 @@
   background-color: transparent;
   border: none;
   outline: none;
+  font-size: 24px;
+  color: var(--color-text);
+  padding-left: 13px;
+}
+
+.header__search-input:focus {
+  background-color: var(--color-primary);
 }
 
 .header__burger-btn {
@@ -59,4 +67,18 @@
 .header__burger-btn:focus,
 .header__burger-btn:active {
   box-shadow: 0 0 3px 2px var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+
+  .header__search-form {
+    width: 100%;
+    order: 1;
+    height: 50px;
+    padding-left: 50px;
+    background-position: left 10px center;
+  }
 }
