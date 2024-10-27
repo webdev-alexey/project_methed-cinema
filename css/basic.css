@@ -3,33 +3,60 @@ html {
 }
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  padding-top: 50px;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Inter, sans-serif;
+  padding-top: 50px;
   background-color: var(--color-bg);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   color: var(--color-text);
 }
 
-img {
+img,
+svg {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
-button {
-  cursor: pointer;
-}
-
 h1,
 h2,
+h3,
+h4,
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
 
 .container {
@@ -38,8 +65,32 @@ p {
   padding: 0 30px;
 }
 
+.btn {
+  width: 375px;
+  padding: 25px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 20px;
+  }
+
+  .btn {
+    width: 300px;
+    padding: 16px 5px;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
+  }
+
+  .btn {
+    width: 250px;
+    padding: 14px 5px;
+    font-size: 16px;
   }
 }
