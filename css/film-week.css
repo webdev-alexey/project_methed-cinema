@@ -128,16 +128,6 @@
 
 @media (max-width: 768px) {
   .film-week {
-    padding: 30px 0;
-  }
-  .film-week__title {
-    font-size: 25px;
-  }
-  .film-week__title_origin {
-    font-size: 20px;
-  }
-
-  .film-week {
     padding-top: 30px;
   }
 
@@ -152,20 +142,8 @@
 }
 
 @media (max-width: 480px) {
-  .film-week__container:after {
-    right: 30px;
-  }
-
   .film-week__title {
-    font-size: 24px;
-  }
-
-  .film-week__title_origin {
-    font-size: 18px;
-  }
-
-  .film-week__title_origin {
-    font-size: 15px;
+    font-size: 48px;
   }
 
   .film-week__poster {
